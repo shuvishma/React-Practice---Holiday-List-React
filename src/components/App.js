@@ -42,10 +42,10 @@ class App extends Component {
       return item.country === "India";
     });
     
-    var newList = [...indianLocations,];
+    var newList = [...indianLocations];
     return (
       <div id="main">
-        <ol>
+        <ol type="cities">
           {newList.map((item, index) => (
             <li key={`location${index + 1}`}>{item.name}</li>
           ))}
